@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+;}
+:root{
+    font-family: 'Inter',sans-serif;
+    color: #1F1D2A;
+}   
+a{
+    text-decoration: none;
+}
+ul, li, ol{
+    list-style: none;
+}
+body{
+    background-color: rgb(219, 206, 206);
+    padding: 0 120px;
+}
+/* header begin */
+.header1{
+    width: auto;
+    height: 48px;   
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__trademark{
+    font-weight: 500;
+    font-size: 32px;
+    display: flex;
+}
+.header__navbar ul{
+    line-height: 48px;
+    gap: 32px;
+    display: flex;
+}
+.header__navbar ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F1D2A;
+    display: flex;
+    flex-direction: wrap;
+}
+.header__navbar ul li:first-child{
+    text-decoration: underline;
+}
+.header__btn-signin{
+    cursor: pointer;
+    line-height: 24px;
+    background-color: rgb(219, 206, 206);
+    width: 110px;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #1F1D2A;
+    font-size: 16px;
+    color: #1F1D2A;
+    transition: all ease-in-out 0.5s;
+}
+.header__btn-signin:hover{
+    background-color: rgb(51, 51, 238);
+    color: #1F1D2A;
+}
+/* header end */
+/* get started begin */
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+/* introduce begin*/
+.introduce > .title{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 581px;
+    height: 166px;
+    line-height: 82.5px;
+}
+.introduce > .marketing{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #9B948E;
+    margin-bottom: 50px;
+    width: 432px;
+    height: 60px;
+}
+.get-started-btn{
+    cursor: pointer;
+    border-radius: 6px;
+    height: 70px;
+    width: 170px;
+    background-color: greenyellow;
+    color: #1f1d2a;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    transition: ease-in-out 0.5s;
+}
+.get-started-btn:hover{
+    background-color: aqua;
+}
+/* introduce end */
+/* portrait begin */
+.portrait-rate{
+    width: 500px;
+    height: 500px;
+}
+.portrait{
+    border-radius: 50%;
+}
+/* portrait end */
+/* continue-btn begin */
+.continue-btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -460px;
+    left: 450px;
+}
+/* continue-btn end */
+/* rating begin */
+.rate {
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 200px;
+    height: 130px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    bottom: 100px;
+    left: -5px;
+}
+.name{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.job{
+    font-weight: 300;
+    color: #9B948E;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* rating end */
+/* get started end */
+.companies{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.list-companies p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 30px;    
+}
+.list-companies ul{
+    display: flex;
+    gap: 60px;  
+}
+.list-companies ul li img{
+    width: 120px;    
+}
+.action{
+    margin-bottom: 70px;
+    text-align: center;
+}
+.career p:first-child{
+    font-size: 18x;
+    font-weight: 500;
+    line-height: 27px;
+}
+.career p:last-child{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    position: relative;
+}
+.career p:last-child::after{
+    text-decoration: solid 5px rgb(98, 160, 4) underline;
+    bottom: 0;
+    content: 'Career';
+    position: absolute;
+    transform: translate(-100%, 0);
+}
+.list-careers{
+    max-width: 1400px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+.list-careers  img{
+    width: 250px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+}
+.list-careers figcaption{
+    width: 250px;
+    height: 100px;
+    margin-top: -6px;
+    padding: 0px 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name-career{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.major{
+    color: #9B948E;
+    font-size: 16px;
+    font-weight: 400;
+}
+.list-careers a{
+    color: #1F1D2A;
+    transition: ease-in-out 0.5s;
+}
+
+.list-careers > figure:hover{
+    height: 450px;
+}
