@@ -223,7 +223,6 @@ body{
     position: absolute;
     transform: translate(-100%, 0);
 }
-}
 .list-careers{
     max-width: 1400px;
     height: 450px;
@@ -267,7 +266,6 @@ body{
     color: #1F1D2A;
     transition: ease-in-out 0.5s;
 }
-
 .list-careers > figure:hover{
     height: 450px;
 }
