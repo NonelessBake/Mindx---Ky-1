@@ -205,23 +205,24 @@ body{
     margin-bottom: 70px;
     text-align: center;
 }
-.career p:first-child{
+.action p:first-child{
     font-size: 18x;
     font-weight: 500;
     line-height: 27px;
 }
-.career p:last-child{
+.action p:last-child{
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
     position: relative;
 }
-.career p:last-child::after{
+.action p:last-child::after{
     text-decoration: solid 5px rgb(98, 160, 4) underline;
     bottom: 0;
     content: 'Career';
     position: absolute;
     transform: translate(-100%, 0);
+}
 }
 .list-careers{
     max-width: 1400px;
