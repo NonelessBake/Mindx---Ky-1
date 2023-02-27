@@ -20,7 +20,7 @@ function giaCuoc (thoiGian){
     }
 }
 giaCuoc (50);
-giaCuoc (200)
+giaCuoc (200);
 giaCuoc (201);
 
 // BT2
@@ -29,9 +29,9 @@ function sumChan (number){
     for (i=1;i<=number;i++) {
         if (i%2===0) {
             sum+=i;
-            console.log(`Khi i = ${i} thi tong = ${sum}`) //Code nay chi de check
+            console.log(`Khi i = ${i} thi tong = ${sum}`); //Code nay chi de check
         }
     }
     console.log(`Tong cac so chan tu 1 den ${number} bang: ${sum}`);
 }
-sumChan (15)
+sumChan (15);
